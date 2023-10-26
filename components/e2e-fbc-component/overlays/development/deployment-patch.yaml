@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: e2e-fbc-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/e2e-fbc-application/e2e-fbc-component@sha256:cbc4487683b835fde7de87e78d9f9d57d7a22dbc2d493a11b5b680b66d690814
+        name: fbc
+        resources: {}
+status: {}
